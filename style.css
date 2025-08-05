@@ -85,6 +85,11 @@ canvas#stars {
   margin-bottom: 1rem;
 }
 
+.highlight {
+  color: #FAD4FF;
+  font-weight: bold;
+}
+
 /* Typing Effect */
 .typing-wrapper {
   font-size: 2.2rem;
