@@ -234,22 +234,29 @@ p {
 
 /* Mobile */
 @media (max-width: 480px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .typing-wrapper {
-    font-size: 1.3rem;
-    flex-direction: column;
+    font-size: 1.6rem;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .side-menu .nav-links {
