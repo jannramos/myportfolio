@@ -123,3 +123,27 @@ p {
   font-size: 1.2rem;
   color: #ccc;
 }
+
+.typing-wrapper {
+  font-size: 1.5rem;
+  color: #ccc;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: #fff;
+  animation: blink 0.7s steps(1) infinite;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
