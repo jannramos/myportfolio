@@ -127,7 +127,6 @@ canvas#stars {
   color: #ccc;
   display: flex;
   justify-content: flex-start;
-  margin-top: 1rem;
   flex-wrap: wrap;
   word-break: break-word;
   justify-content: center;
