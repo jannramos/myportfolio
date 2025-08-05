@@ -1,3 +1,24 @@
+/* Basic Reset and Layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  overflow: hidden;
+}
+
+/* Star Canvas */
+canvas#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind content */
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Nav */
 .main-header {
   position: fixed;
   top: 0;
@@ -10,11 +31,11 @@
 
 .main-header ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .main-header a {
@@ -22,96 +43,59 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
 .main-header a:hover {
   color: #00ffff;
 }
 
-/* Adjust container to be below header */
+/* Hero Content */
 .container {
-  margin-top: 100px;
   position: relative;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 15px;
-  backdrop-filter: blur(4px);
+  z-index: 2; /* In front of stars */
+  margin-top: 120px;
   text-align: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background: black;
-  overflow: hidden;
-  font-family: 'Segoe UI', sans-serif;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Stars background animation */
-.stars, .stars2, .stars3 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: repeat;
-  background-size: cover;
-  z-index: 0;
-  animation: moveStars 100s linear infinite;
-  opacity: 0.5;
-}
-
-.stars {
-  background-image: url('https://raw.githubusercontent.com/JulianLaval/canvas-space/master/stars.png');
-  animation-duration: 100s;
-}
-
-.stars2 {
-  background-image: url('https://raw.githubusercontent.com/JulianLaval/canvas-space/master/stars.png');
-  animation-duration: 200s;
-  opacity: 0.3;
-}
-
-.stars3 {
-  background-image: url('https://raw.githubusercontent.com/JulianLaval/canvas-space/master/stars.png');
-  animation-duration: 300s;
-  opacity: 0.1;
-}
-
-@keyframes moveStars {
-  0% { background-position: 0 0; }
-  100% { background-position: -10000px 10000px; }
-}
-
-/* Centered content styling */
-.container {
-  position: relative;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 15px;
-  backdrop-filter: blur(4px);
 }
 
 .profile-pic {
   width: 160px;
   height: 160px;
-  object-fit: cover;
   border-radius: 50%;
   border: 3px solid white;
   margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Typing effect */
+.typing-wrapper {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.typed-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: #fff;
+  animation: blink 0.7s steps(1) infinite;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 h1 {
