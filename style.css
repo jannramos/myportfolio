@@ -79,6 +79,12 @@ canvas#stars {
   color: #FAD4FF;
 }
 
+.description {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
 /* Typing Effect */
 .typing-wrapper {
   font-size: 2.2rem;
