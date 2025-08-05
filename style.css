@@ -104,6 +104,7 @@ canvas#stars {
   text-align: center;
   word-break: break-word;
 
+  height: 2.5em;
   overflow: hidden;
 }
 
@@ -239,6 +240,7 @@ p {
   }
 
   .description {
+    font-size: 1.1rem;
     position: relative;
     z-index: 1;
   }
@@ -272,6 +274,7 @@ p {
   }
 
   .description {
+    font-size: 1.1rem;
     position: relative;
     z-index: 1;
   }
