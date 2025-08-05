@@ -132,13 +132,6 @@ canvas#stars {
 }
 
 /* Nav Container */
-/* Logo (optional) */
-.logo {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 /* Burger icon */
 .burger {
   display: none;
