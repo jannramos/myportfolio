@@ -92,7 +92,7 @@ canvas#stars {
 
 /* Typing Effect */
 .typing-wrapper {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #ccc;
@@ -103,11 +103,7 @@ canvas#stars {
   flex-wrap: wrap;
   text-align: center;
   word-break: break-word;
-
-  height: 2.5em;
-  overflow: hidden;
 }
-
 
 .type-container {
   display: inline-flex;
@@ -235,16 +231,17 @@ p {
     height: 120px;
   }
 
- .typing-wrapper {
-    font-size: 1.3rem;
-  }
-
   .description {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .typing-wrapper {
+    font-size: 1.6rem;
   }
 
   p {
@@ -267,16 +264,17 @@ p {
     height: 120px;
   }
 
- .typing-wrapper {
-    font-size: 1.3rem;
-  }
-
   .description {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .typing-wrapper {
+    font-size: 1.6rem;
   }
 
   p {
