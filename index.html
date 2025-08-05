@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Star layers -->
-  <div class="stars"></div>
-  <div class="stars2"></div>
-  <div class="stars3"></div>
+  <!-- Star canvas background -->
+  <canvas id="stars"></canvas>
 
-  <!-- Header Navigation -->
+  <!-- Navigation -->
   <header class="main-header">
     <nav>
       <ul>
@@ -24,14 +22,17 @@
     </nav>
   </header>
 
+  <!-- Hero content -->
   <section class="container" id="home">
-  <img src="assets/mypic.jpg" alt="Profile Picture" class="profile-pic" />
-  <h1>Hi, I'm Jhonalyn Ann Ramos</h1>
-  <div class="typing-wrapper">
-  <span class="typed-text"></span><span class="cursor"></span>
-</div>
+    <img src="assets/mypic.jpg" alt="Profile Picture" class="profile-pic" />
+    <h1>Hi, I'm Jhonalyn Ann Ramos</h1>
+    <div class="typing-wrapper">
+      <span class="typed-text"></span><span class="cursor"></span>
+    </div>
+  </section>
 
-</section>
-<script src="script/typing.js" defer></script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script src="stars.js" defer></script>
 </body>
 </html>
