@@ -51,11 +51,17 @@ canvas#stars {
 
 /* Hero Content */
 .container {
-  position: relative;
-  z-index: 2; /* In front of stars */
-  margin-top: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
