@@ -124,6 +124,11 @@ p {
   color: #ccc;
 }
 
+.typed-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .typing-wrapper {
   font-size: 1.5rem;
   font-weight: 500;
