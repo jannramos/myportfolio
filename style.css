@@ -26,6 +26,8 @@ canvas#stars {
   right: 0;
   padding: 2rem;
   z-index: 1000;
+  align-items: center;
+  text-align: center;
 }
 
 .main-header ul {
@@ -66,7 +68,6 @@ canvas#stars {
   max-width: 1200px;
   width: 100%;
   flex-wrap: wrap;
-  text-align: left;
 }
 
 /* Profile Picture */
@@ -104,6 +105,8 @@ canvas#stars {
   margin-top: 1rem;
   font-size: 1.5rem;
   color: white;
+  align-items: center;
+  text-align: center;
 }
 
 .right-side {
@@ -112,6 +115,8 @@ canvas#stars {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 /* Typing Effect */
