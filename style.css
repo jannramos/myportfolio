@@ -47,7 +47,7 @@ canvas#stars {
 }
 
 .main-header a:hover {
-  color: #00ffff;
+  color: #FAD4FF;
 }
 
 /* Hero Content */
@@ -69,7 +69,7 @@ canvas#stars {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #FAD4FF;
   margin-bottom: 1rem;
   object-fit: cover;
 }
@@ -95,7 +95,7 @@ canvas#stars {
   display: inline-block;
   width: 2px;
   height: 1.2em;
-  background-color: #fff;
+  background-color: #FAD4FF;
   animation: blink 0.7s steps(1) infinite;
   vertical-align: middle;
   margin-left: 0;
