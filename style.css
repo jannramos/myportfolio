@@ -126,10 +126,11 @@ p {
 
 .typing-wrapper {
   font-size: 1.5rem;
-  color: #ccc;
   font-weight: 500;
-  display: inline-block;
-  margin-top: 1rem;
+  color: #ccc;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .cursor {
@@ -138,8 +139,8 @@ p {
   height: 1.2em;
   background-color: #fff;
   animation: blink 0.7s steps(1) infinite;
-  vertical-align: bottom;
-  margin-left: 5px;
+  vertical-align: middle;
+  margin-left: 0;
 }
 
 @keyframes blink {
