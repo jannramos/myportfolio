@@ -206,7 +206,7 @@ p {
 
 /* Tablets */
 @media (max-width: 768px) {
-  .main-header {
+  .desktop-nav {
     display: none;
   }
 
