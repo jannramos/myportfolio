@@ -266,39 +266,7 @@ p {
 }
 
 /* Responsive Media Queries */
-@media (min-width: 769px) {
-  .container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    text-align: left;
-  }
 
-  .left-column,
-  .right-column {
-    flex: 1;
-  }
-
-  .right-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .typing-wrapper {
-    justify-content: flex-start;
-  }
-
-  .btn-download {
-    margin: 1rem 0;
-  }
-
-  .social-icons {
-    justify-content: flex-start;
-  }
-}
 /* Tablets */
 @media (max-width: 768px) {
   .desktop-nav {
