@@ -74,6 +74,10 @@ canvas#stars {
   object-fit: cover;
 }
 
+.pink-text{
+    color: #FAD4FF;
+  }
+
 /* Typing effect */
 .typing-wrapper {
   font-size: 1.5rem;
