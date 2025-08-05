@@ -303,33 +303,23 @@ p {
     width: 120px;
     height: 120px;
     margin-top: -190px;
-    align-items: center;
-    justify-content: center;
   }
 
   .description {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   h1 {
     font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   .typing-wrapper {
     font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   p {
     font-size: 1rem;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -347,34 +337,23 @@ p {
     width: 120px;
     height: 120px;
     margin-top: -190px;
-    align-items: center;
-    justify-content: center;
-
   }
 
   .description {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   h1 {
     font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   .typing-wrapper {
     font-size: 1.6rem;
-    align-items: center;
-    justify-content: center;
   }
 
   p {
     font-size: 1rem;
-    align-items: center;
-    justify-content: center;
   }
 
   .side-menu .nav-links {
