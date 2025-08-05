@@ -92,7 +92,7 @@ canvas#stars {
 
 /* Typing Effect */
 .typing-wrapper {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #ccc;
@@ -236,7 +236,7 @@ p {
   }
 
  .typing-wrapper {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     height: 2em;
   }
 
@@ -270,7 +270,7 @@ p {
   }
 
  .typing-wrapper {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     height: 2em;
   }
 
