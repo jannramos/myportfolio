@@ -14,7 +14,7 @@ canvas#stars {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; /* Behind content */
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -37,6 +37,7 @@ canvas#stars {
   gap: 2rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .main-header a {
@@ -63,8 +64,10 @@ canvas#stars {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
+/* Profile Picture */
 .profile-pic {
   width: 160px;
   height: 160px;
@@ -74,20 +77,22 @@ canvas#stars {
   object-fit: cover;
 }
 
-.pink-text{
-    color: #FAD4FF;
-  }
+.pink-text {
+  color: #FAD4FF;
+}
 
-/* Typing effect */
+/* Typing Effect */
 .typing-wrapper {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 700;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
   line-height: 1;
   margin-top: 1rem;
   color: #ccc;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .typed-text {
@@ -97,7 +102,7 @@ canvas#stars {
 
 .cursor {
   display: inline-block;
-  width: 2px;
+  width: 5px;
   height: 1.2em;
   background-color: #FAD4FF;
   animation: blink 0.7s steps(1) infinite;
@@ -105,6 +110,7 @@ canvas#stars {
   margin-left: 0;
 }
 
+/* Stars */
 .stars {
   position: fixed;
   top: 0;
@@ -132,6 +138,7 @@ canvas#stars {
   50% { opacity: 0; }
 }
 
+/* Headings */
 h1 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
@@ -142,32 +149,56 @@ p {
   color: #ccc;
 }
 
-.typed-text {
-  font-weight: bold;
-  text-transform: uppercase;
+/* --------------------
+   Responsive Media Queries
+-------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main-header ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .typing-wrapper {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
-.typing-wrapper {
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #ccc;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-}
+/* Mobile */
+@media (max-width: 480px) {
+  .main-header a {
+    font-size: 1rem;
+  }
 
-.cursor {
-  display: inline-block;
-  width: 5px;
-  height: 1.2em;
-  background-color: #fff;
-  animation: blink 0.7s steps(1) infinite;
-  vertical-align: middle;
-  margin-left: 0;
-}
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .typing-wrapper {
+    font-size: 1.3rem;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }
