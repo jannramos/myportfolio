@@ -23,21 +23,25 @@ canvas#stars {
 .main-header {
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
+  height: 100vh;
+  width: auto;
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
-  padding: 10px 0;
-  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-header ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 .main-header a {
@@ -45,6 +49,8 @@ canvas#stars {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .main-header a:hover {
@@ -98,7 +104,7 @@ canvas#stars {
 
 .type-container {
   display: inline-flex;
-  white-space: nowrap; /* Prevent line break between text and cursor */
+  white-space: nowrap;
 }
 
 .typed-text {
@@ -115,7 +121,7 @@ canvas#stars {
   animation: blink 0.7s steps(1) infinite;
   margin-left: 0;
   padding: 0;
-  transform: translateY(1px); /* Align vertically */
+  transform: translateY(1px);
 }
 
 @keyframes moveStars {
@@ -128,17 +134,21 @@ canvas#stars {
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
-/* Nav Container */
 /* Burger icon */
 .burger {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
   z-index: 11;
+  position: fixed;
+  top: 15px;
+  right: 20px;
 }
 
 /* Side menu panel */
@@ -174,6 +184,7 @@ canvas#stars {
   gap: 2rem;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .side-menu .nav-links a {
@@ -188,18 +199,6 @@ canvas#stars {
   right: 0;
 }
 
-/* On small screens */
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-
-  .main-header ul {
-    display: none;
-  }
-}
-
-
 /* Headings */
 h1 {
   font-size: 1.8rem;
@@ -211,15 +210,16 @@ p {
   color: #ccc;
 }
 
-/* --------------------
-   Responsive Media Queries
--------------------- */
+/* Responsive Media Queries */
 
 /* Tablets */
 @media (max-width: 768px) {
-  .main-header ul {
-    gap: 1rem;
-    flex-wrap: wrap;
+  .main-header {
+    display: none;
+  }
+
+  .burger {
+    display: block;
   }
 
   .profile-pic {
@@ -242,10 +242,6 @@ p {
 
 /* Mobile */
 @media (max-width: 480px) {
-  .main-header a {
-    font-size: 1rem;
-  }
-
   .profile-pic {
     width: 100px;
     height: 100px;
@@ -262,5 +258,10 @@ p {
 
   p {
     font-size: 0.9rem;
+  }
+
+  .side-menu .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
