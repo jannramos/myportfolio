@@ -95,35 +95,26 @@ canvas#stars {
   text-align: center;
 }
 
+/* Ensure typed text and cursor sit flush */
 .typed-text {
   font-weight: bold;
   text-transform: uppercase;
+  display: inline;
+  margin-right: 0; /* Prevent space */
 }
 
+/* Adjust cursor to stay tight */
 .cursor {
   display: inline-block;
-  width: 5px;
+  width: 3px;
   height: 1.2em;
   background-color: #FAD4FF;
   animation: blink 0.7s steps(1) infinite;
-  vertical-align: middle;
-  margin-left: 0;
+  margin-left: 0;       /* Ensures it touches the text */
+  padding: 0;
+  transform: translateY(1px); /* Slight vertical alignment tweak */
 }
 
-/* Stars */
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: 0;
-  pointer-events: none;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 2px 2px;
-  animation: moveStars 60s linear infinite;
-}
 
 @keyframes moveStars {
   from {
