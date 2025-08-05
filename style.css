@@ -24,7 +24,10 @@ canvas#stars {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2rem;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-end;
   z-index: 1000;
 }
 
@@ -47,6 +50,26 @@ canvas#stars {
 
 .main-header a:hover {
   color: #FAD4FF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Hero Content */
