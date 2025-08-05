@@ -86,35 +86,37 @@ canvas#stars {
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-  margin-top: 1rem;
   color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
   flex-wrap: wrap;
   text-align: center;
+  word-break: break-word;
 }
 
-/* Ensure typed text and cursor sit flush */
+.type-container {
+  display: inline-flex;
+  white-space: nowrap; /* Prevent line break between text and cursor */
+}
+
 .typed-text {
   font-weight: bold;
-  text-transform: uppercase;
   display: inline;
-  margin-right: 0; /* Prevent space */
+  text-transform: uppercase;
 }
 
-/* Adjust cursor to stay tight */
 .cursor {
   display: inline-block;
   width: 3px;
   height: 1.2em;
   background-color: #FAD4FF;
   animation: blink 0.7s steps(1) infinite;
-  margin-left: 0;       /* Ensures it touches the text */
+  margin-left: 0;
   padding: 0;
-  transform: translateY(1px); /* Slight vertical alignment tweak */
+  transform: translateY(1px); /* Align vertically */
 }
-
 
 @keyframes moveStars {
   from {
