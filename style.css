@@ -1,4 +1,46 @@
-/* Reset */
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.main-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.main-header a:hover {
+  color: #00ffff;
+}
+
+/* Adjust container to be below header */
+.container {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
