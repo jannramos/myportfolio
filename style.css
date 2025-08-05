@@ -135,7 +135,7 @@ p {
 
 .cursor {
   display: inline-block;
-  width: 2px;
+  width: 10px;
   height: 1.2em;
   background-color: #fff;
   animation: blink 0.7s steps(1) infinite;
