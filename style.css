@@ -79,16 +79,6 @@ canvas#stars {
   object-fit: cover;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px; /* Adjust as needed */
-  width: auto;
-}
-
 .pink-text {
   color: #FAD4FF;
 }
