@@ -1,7 +1,7 @@
-const textArray = ["Web Developer", "Designer", "Programmer"];
+const textArray = ["Web Developer", "UI/UX Designer", "Game Developer","Frontend Developer"];
 const typingDelay = 100;
 const erasingDelay = 50;
-const newTextDelay = 1500; // Delay between texts
+const newTextDelay = 1500;
 let textIndex = 0;
 let charIndex = 0;
 
