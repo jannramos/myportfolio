@@ -94,6 +94,7 @@ canvas#stars {
 .typing-wrapper {
   font-size: 2.2rem;
   font-weight: 700;
+  margin-bottom: 50px;
   text-transform: uppercase;
   color: #ccc;
   display: flex;
