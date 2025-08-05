@@ -127,17 +127,6 @@ canvas#stars {
   text-transform: uppercase;
 }
 
-.cursor {
-  display: inline-block;
-  width: 3px;
-  height: 1em;
-  background-color: #FAD4FF;
-  animation: blink 0.7s steps(1) infinite;
-  margin-left: 0;
-  padding: 0;
-  transform: translateY(1px);
-}
-
 /* Download CV Button */
 .btn-download {
   display: inline-block;
