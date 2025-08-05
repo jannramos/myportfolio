@@ -56,13 +56,17 @@ canvas#stars {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  text-align: center;
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  gap: 4rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 /* Profile Picture */
@@ -73,6 +77,16 @@ canvas#stars {
   border: 3px solid #FAD4FF;
   margin-bottom: 1rem;
   object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+  width: auto;
 }
 
 .pink-text {
@@ -89,6 +103,26 @@ canvas#stars {
   color: #FAD4FF;
   font-weight: bold;
 }
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left-side h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.right-side {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 /* Typing Effect */
 .typing-wrapper {
@@ -98,17 +132,15 @@ canvas#stars {
   text-transform: uppercase;
   color: #ccc;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
   margin-top: 1rem;
   flex-wrap: wrap;
-  text-align: center;
   word-break: break-word;
 
   
   max-width: 100%;
   width: 100%;
-  padding: 0 1rem;
   line-height: 1.2;
 }
 
