@@ -207,6 +207,8 @@ canvas#stars {
 h1 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 p {
