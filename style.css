@@ -129,7 +129,7 @@ canvas#stars {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
@@ -144,7 +144,7 @@ p {
 }
 
 .typing-wrapper {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #ccc;
   display: inline-flex;
