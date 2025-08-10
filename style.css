@@ -291,56 +291,6 @@ p {
   color: #ccc;
 }
 
-/* Responsive Media Queries */
-
-/* Tablets */
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    margin-top: -190px;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-    .typing-wrapper {
-    font-size: 2.2rem;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .typed-text{
-    text-align: center;
-  }
-  
-  .cursor {
-    height: 1.2em;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .side-menu .nav-links {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 
 /* Mobile */
 @media (max-width: 480px) {
@@ -355,7 +305,6 @@ p {
   .profile-pic {
     width: 120px;
     height: 120px;
-    margin-top: -190px;
   }
 
   .description {
@@ -370,15 +319,6 @@ p {
   .typing-wrapper {
     font-size: 2.2rem;
     justify-content: center;
-    text-align: center;
-  }
-
-  .typed-text{
-    text-align: center;
-  }
-
-  .cursor {
-    height: 1.2em;
     text-align: center;
   }
 
