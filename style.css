@@ -311,7 +311,6 @@ p {
 
   .description {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
   }
 
   h1 {
@@ -324,6 +323,10 @@ p {
     text-align: center;
   }
 
+  .typed-text{
+    text-align: center;
+  }
+  
   .cursor {
     height: 1.2em;
     text-align: center;
@@ -331,6 +334,11 @@ p {
 
   p {
     font-size: 1rem;
+  }
+
+  .side-menu .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -352,7 +360,6 @@ p {
 
   .description {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
   }
 
   h1 {
@@ -365,11 +372,16 @@ p {
     justify-content: center;
     text-align: center;
   }
+
+  .typed-text{
+    text-align: center;
+  }
+
   .cursor {
     height: 1.2em;
     text-align: center;
   }
-  
+
   p {
     font-size: 1rem;
   }
