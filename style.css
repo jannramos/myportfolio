@@ -156,7 +156,7 @@ canvas#stars {
 .cursor {
   display: inline-block;
   width: 3px;
-  height: 1em;
+  height: 1.2em;
   background-color: #FAD4FF;
   animation: blink 0.7s steps(1) infinite;
   margin-left: 0;
