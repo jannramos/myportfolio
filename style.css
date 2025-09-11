@@ -32,31 +32,74 @@ canvas#stars {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2rem;
+  width: 100vw;
+  background: transparent;
   z-index: 1000;
-  align-items: center;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-.main-header ul {
+.nav-container {
+  display: flex;
+  justify-content: flex-end; /* Align navbar to the right */
+  align-items: center;
+  width: 100%;
+  padding: 2rem 2.5rem 0 2rem;
+  box-sizing: border-box;
+}
+
+.desktop-nav {
+  background: transparent;
+  border-radius: 16px;
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.main-header ul.nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
   margin: 0;
   padding: 0;
+  background: transparent;
+  justify-content: flex-end; /* Right align nav links */
 }
 
-.main-header a {
+.main-header a.nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
-  writing-mode: horizontal-tb;
-  transform: none;
+  position: relative;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: color 0.2s;
+  background: transparent;
+  overflow: hidden;
 }
 
-.main-header a:hover {
-  color: #FAD4FF;
+.main-header a.nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #FAD4FF; /* Orange underline */
+  transition: width 0.35s cubic-bezier(.4,1.5,.5,1), left 0.35s cubic-bezier(.4,1.5,.5,1);
+}
+
+.main-header a.nav-link:hover::after,
+.main-header a.nav-link.active::after {
+  width: 60%;
+  left: 20%;
+}
+
+.main-header a.nav-link:hover,
+.main-header a.nav-link.active {
+  color: #fff;
+  transition: color 0.2s;
 }
 
 /* Hero Content */
@@ -203,7 +246,7 @@ canvas#stars {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #232323;
+  background: rgba(35, 35, 35, 0.5); /* More transparent background */
   border-radius: 12px;
   width: 48px;
   height: 48px;
@@ -254,7 +297,7 @@ canvas#stars {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #232323;
+  background: rgba(35, 35, 35, 0.5); /* More transparent background */
   border-radius: 12px;
   width: 48px;
   height: 48px;
@@ -470,5 +513,12 @@ p {
     gap: 30px;
     align-items: flex-start;
     padding-left: 30px;
+  }
+}
+
+/* Remove side menu nav links on desktop */
+@media (min-width: 769px) {
+  .side-menu {
+    display: none !important;
   }
 }
