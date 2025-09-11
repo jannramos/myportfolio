@@ -48,10 +48,18 @@ canvas#stars {
 }
 
 .desktop-nav {
-  background: transparent;
-  border-radius: 16px;
-  padding: 0.5rem 1.5rem;
-  box-sizing: border-box;
+  background: rgba(35, 35, 35, 0.7); /* Semi-transparent dark background */
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  margin-top: 0.7rem;
+  margin-right: 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 1.5px solid #666;
+  backdrop-filter: blur(2px);
 }
 
 .main-header ul.nav-links {
@@ -86,7 +94,7 @@ canvas#stars {
   width: 0;
   height: 4px;
   border-radius: 2px;
-  background: #FAD4FF; /* Orange underline */
+  background: #FAD4FF;
   transition: width 0.35s cubic-bezier(.4,1.5,.5,1), left 0.35s cubic-bezier(.4,1.5,.5,1);
 }
 
@@ -100,6 +108,58 @@ canvas#stars {
 .main-header a.nav-link.active {
   color: #fff;
   transition: color 0.2s;
+}
+
+/* Navbar container like the image */
+.navbar-container {
+  background: rgba(35, 35, 35, 0.7); /* Semi-transparent dark */
+  border-radius: 14px;
+  padding: 0.3rem 2rem;
+  margin-top: 0.7rem;
+  margin-right: 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 1.5px solid #666;
+  backdrop-filter: blur(2px);
+}
+
+/* Nav links inside the container */
+.navbar-container ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container a.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.18rem;
+  position: relative;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  transition: color 0.2s;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Active and hover state: blue color and no underline */
+.navbar-container a.nav-link.active,
+.navbar-container a.nav-link:hover {
+  color: #2196f3; /* Blue color like the image */
+  background: transparent;
+}
+
+.navbar-container a.nav-link::after {
+  display: none !important; /* Remove underline */
 }
 
 /* Hero Content */
@@ -354,15 +414,16 @@ canvas#stars {
   max-width: 320px;
   height: 100vh;
   background: #181818;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  box-shadow: none; /* No shadow by default */
   z-index: 2000;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding-top: 60px;
 }
 
 .side-menu.active {
   transform: translateX(0);
+  box-shadow: -2px 0 24px 4px rgba(255,255,255,0.18); /* White shadow only when active */
 }
 
 /* Close button */
@@ -483,12 +544,12 @@ p {
   }
 
   .side-menu {
-    width: 70vw;
-    max-width: 300px;
+    width: 55vw;           /* Make the burger menu narrower */
+    max-width: 220px;      /* Reduce max width */
     right: 0;
     top: 0;
     height: 100vh;
-    background: #181818;
+    background: #000000;
     position: fixed;
     z-index: 1002;
     transform: translateX(100%);
